@@ -28,7 +28,7 @@ rc.del(function (err) {
 API
 ---
 
-*initrc(name, [options])*
+**initrc(name, [options])**
 
 Creates an `rc` instance.
 
