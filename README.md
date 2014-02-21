@@ -1,4 +1,4 @@
-inirc [![Build Status](https://secure.travis-ci.org/nemtsov/inirc.png)](http://travis-ci.org/nemtsov/inirc)
+inirc [![Build Status](https://travis-ci.org/nemtsov/inirc.png)](https://travis-ci.org/nemtsov/inirc)
 =====
 
 An `ini` format `~/.<your>rc` file management library.
