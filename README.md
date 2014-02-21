@@ -10,13 +10,23 @@ Usage
 var inirc = require('inirc'),
   rc = inirc('.awesomerc');
 
-rc.put({awesome: true}, function (err) {
+rc.put({user: {name: 'heather'}}, function (err) {
   if (err) throw err;
 });
+```
 
+Creates a `~/.awesomerc` with the following contents:
+```
+[user]
+name = heather
+```
+
+You can also `get` and `del`:
+
+```
 rc.get(function (err, data) {
   if (err) throw err;
-  assert(data.awesome);
+  assert(data.user.name === 'heather');
 });
 
 rc.del(function (err) {
@@ -32,7 +42,7 @@ API
 
 Creates an `rc` instance.
 
-The option `home` is available. It defaults to the current user's home directory, which is set by the environment varialbe `HOME` in *nix and `USERPROFILE` on win.
+The option `home` is available. It defaults to the current user's home directory, which is set by the environment varialbe `HOME` in \*nix and `USERPROFILE` on win.
 
 
 **rc.put(configObject, cb)**
