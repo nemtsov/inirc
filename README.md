@@ -1,7 +1,7 @@
 inirc [![Build Status](https://secure.travis-ci.org/nemtsov/inirc.png)](http://travis-ci.org/nemtsov/inirc)
 =====
 
-An `ini` format .*rc file management library.
+An `ini` format `~/.<your>rc` file management library.
 
 Usage
 -----
@@ -22,7 +22,6 @@ rc.get(function (err, data) {
 rc.del(function (err) {
   if (err) throw err;
 });
-
 ```
 
 
@@ -36,11 +35,11 @@ Creates an `rc` instance.
 The option `home` is available. It defaults to the current user's home directory, which is set by the environment varialbe `HOME` in *nix and `USERPROFILE` on win.
 
 
-*rc.put(configObject, cb)*
+**rc.put(configObject, cb)**
 
-*rc.get(cb)*
+**rc.get(cb)**
 
-*rc.del(cb)*
+**rc.del(cb)**
 
 
 License
