@@ -42,7 +42,7 @@ API
 
 Creates an `rc` instance.
 
-The option `home` is available. It defaults to the current user's home directory, which is set by the environment varialbe `HOME` in \*nix and `USERPROFILE` on win.
+The option `home` is available. It defaults to the current user's home directory, which is set by the environment varialbe `HOME` in \*nix and `USERPROFILE` on win. The option `mode` will allow you to set a custom file access permission on the rc file. It defaults to `0600` (rw for the owner only).
 
 
 **rc.put(configObject, cb)**

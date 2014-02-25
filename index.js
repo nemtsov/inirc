@@ -10,11 +10,15 @@ function IniRc(name, options) {
   }
   options = options || {};
   options.home = options.home || getUserHome();
+  options.mode = options.mode || 0600;
+  this._options = options;
   this._path = path.join(options.home, name);
 }
 
 IniRc.prototype.put = function (data, cb) {
-  fs.writeFile(this._path, ini.stringify(data), cb);
+  fs.writeFile(this._path, ini.stringify(data), {
+    mode: this._options.mode
+  }, cb);
 };
 
 IniRc.prototype.get = function (cb) {

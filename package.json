@@ -1,6 +1,6 @@
 {
   "name": "inirc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CRUD for ini-based .*rc files",
   "keywords": [
     "ini", "rc", "config"
