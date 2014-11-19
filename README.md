@@ -6,7 +6,7 @@ An `ini` format `~/.<your>rc` file management library.
 Usage
 -----
 
-```
+```javascript
 var inirc = require('inirc'),
   rc = inirc('.awesomerc');
 
@@ -23,7 +23,7 @@ name = heather
 
 You can also `get` and `del`:
 
-```
+```javascript
 rc.get(function (err, data) {
   if (err) throw err;
   assert(data.user.name === 'heather');
